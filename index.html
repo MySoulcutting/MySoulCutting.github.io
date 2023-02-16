@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8"/>
+    <title>ProSkillAPI——编辑器 枫溪版</title>
+
+    <!-- other scripts are loaded in main.js -->
+    <script src="editor/js/loader.js"></script>
+    <script src="editor/js/main.js"></script>
+    <script src="editor/js/black.js"></script>
+
+    <link rel="stylesheet" href="editor/builderStyle.css"/>
+    <link rel="stylesheet" href="editor/style.css"/>
+    <link rel="stylesheet" href="editor/tooltips.css"/>
+
+
+</head>
+
+<body>
+<!-- Site header -->
+<header>
+    <h1>Pro Skill API</h1>
+    <h2>枫溪版编辑器 (白魂汉化)</h2>
+</header>
+
+<div id="version">
+    <label for="version-select">
+        Server
+    </label>
+    <select id="version-select">
+        <option>1.12</option>
+    </select>
+</div>
+
+<!-- IO Buttons -->
+<div id="io">
+    <p class="ioText">把配置文件拖到此界面即可加载</p>
+    <button id="saveButton" class="ioButton">备份所有数据</button>
+</div>
+
+<!-- Display when the window is too small -->
+<div id="small">
+    <p>请放大您的浏览器窗口或缩小</p>
+</div>
+
+<div id="main" class="main">
+
+    <!-- Skill/Class Tabs -->
+    <div id="tabSpacer"></div>
+    <div id="skillTab" class="tab tabLeft tabActive">
+        技能
+    </div>
+    <div id="classTab" class="tab tabRight">
+        职业
+    </div>
+
+    <!-- Skill Content -->
+    <div id="skills">
+
+        <!-- Skill list -->
+        <select id="skillList" size="30">
+            <option selected="selected">技能 1</option>
+            <option>+ 新增技能</option>
+        </select>
+
+        <!-- Effect builder -->
+        <div id="builder">
+            <h6 id="skillDetails">Details</h6>
+            <h6 id="addTrigger">Triggers</h6>
+            <h6 id="saveSkill" class>保存技能</h6>
+            <h6 id="deleteSkill" class="cancelButton">删除技能</h6>
+            <div id="builderContent"></div>
+        </div>
+
+        <!-- Component editor -->
+        <div id="skillForm">
+        </div>
+
+        <!-- Trigger selection -->
+        <div id="triggerChooser">
+            <h4>触发器</h4>
+
+            <div id="triggerOptions"></div>
+
+            <h5 class="cancelButton">取消</h5>
+        </div>
+
+        <!-- Component selection -->
+        <div id="componentChooser">
+
+            <h4>目标选择器</h4>
+            <div id="targetOptions"></div>
+
+            <h4>触发条件</h4>
+            <div id="conditionOptions"></div>
+
+            <h4>技能效果</h4>
+            <div id="mechanicOptions"></div>
+
+            <hr/>
+            <h5 class="cancelButton">取消</h5>
+
+        </div>
+    </div>
+
+    <!-- Class Content -->
+    <div id="classes">
+
+        <!-- Class list -->
+        <select id="classList" size="30">
+            <option selected="selected">职业 1</option>
+            <option>+ 新增职业</option>
+        </select>
+
+        <div id="classForm"></div>
+    </div>
+
+</div>
+
+<!-- Site footer -->
+<footer>
+    <a id="rayhughes">枫溪特供版本</a>
+</footer>
+
+<div id="badBrowser">
+    <p>推荐使用Chrome/Firefox/Edge浏览器访问)</p>
+</div>
+</body>
+
+</html>
