@@ -27,7 +27,7 @@ const Type = {
 const Trigger = {
     BLOCK_BREAK: {name: 'Block break', container: true, construct: TriggerBlockBreak},
     BLOCK_PLACE: {name: 'Block Place', container: true, construct: TriggerBlockPlace},
-    CAST: {name: '释放', container: true, construct: TriggerCast},
+    CAST: {name: 'Cast', container: true, construct: TriggerCast},
     CLEANUP: {name: 'Cleanup', container: true, construct: TriggerCleanup},
     CROUCH: {name: 'Crouch', container: true, construct: TriggerCrouch},
     DEATH: {name: 'Death', container: true, construct: TriggerDeath},
